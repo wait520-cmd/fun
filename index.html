@@ -1,0 +1,44 @@
+html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>搞怪页面</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+      background-color: #f0f0f0;
+      font-family: "微软雅黑", sans-serif;
+    }
+    img {
+      max-width: 300px;
+      margin-top: 20px;
+      animation: shake 0.5s infinite;
+    }
+    @keyframes shake {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(5px, 5px); }
+      50% { transform: translate(0, 5px); }
+      75% { transform: translate(-5px, 5px); }
+      100% { transform: translate(0, 0); }
+    }
+    .text {
+      margin-top: 20px;
+      font-size: 24px;
+      color: #c71585;
+      font-weight: bold;
+      animation: colorChange 3s infinite alternate;
+    }
+    @keyframes colorChange {
+      0% { color: #c71585; }
+      100% { color: #ff69b4; }
+    }
+  </style>
+</head>
+<body>
+  <h1>欢迎来到搞怪页面！</h1>
+  <img src="https://i.imgur.com/CSZ2tFR.gif" alt="搞怪图片" />
+  <div class="text">你好！你被我逗笑了吗？😜</div>
+</body>
+</html>
